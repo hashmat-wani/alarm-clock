@@ -1,0 +1,126 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #4a98f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.wrapper,
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  /* border: 1px solid red; */
+  width: 440px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.wrapper img {
+  max-width: 103px;
+}
+.wrapper h1 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0;
+  /* border: 1px solid red; */
+}
+.wrapper .content {
+  width: 100%;
+  justify-content: space-between;
+}
+.content.disable {
+  cursor: no-drop;
+}
+.content .column {
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  width: calc(100% / 3 - 5px);
+}
+.content.disable .column {
+  opacity: 0.6;
+  pointer-events: none;
+}
+.column select {
+  width: 100%;
+  height: 53px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 15px;
+}
+.wrapper button {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 17px 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: #4a98f7;
+}
+
+.footer {
+  width: 450px;
+}
+
+.footer_top {
+  width: 100%;
+  color: white;
+  border-top: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 15px;
+  margin-top: 30px;
+  padding: 20px 0;
+}
+
+.fa:hover {
+  transform: scale(0.9, 0.9);
+}
+.fa {
+  color: white;
+  padding-top: 4px;
+  cursor: pointer;
+}
+.footer_bottom {
+  text-align: center;
+  border-top: 1px solid white;
+  font-size: small;
+  color: whitesmoke;
+  margin: 0 70px;
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    width: 100%;
+  }
+  .body {
+    padding: 18px;
+  }
+  .wrapper {
+    width: 100%;
+    padding: 18px;
+  }
+}
